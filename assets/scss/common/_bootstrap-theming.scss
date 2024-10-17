@@ -80,7 +80,7 @@
 		color: $color-light;
 		border: none;
 		background-color: $color-accent;
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 		letter-spacing: .1em;
 	}
 
@@ -88,4 +88,9 @@
 		border: 1px solid $color-gray;
 		border-radius: 0 0 4px 4px;
 	}
+}
+
+.input-group-lg > .form-control,
+.input-lg {
+	font-size: 0.875rem;
 }

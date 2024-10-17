@@ -108,14 +108,63 @@
 			<div class="site-search panel panel-info">
 				<div class="panel-heading">Поиск</div>
 				<div class="panel-body">
-					PanelContent
+					<form action="search">
+						<div class="input-group input-group-lg">
+							<input class="form-control" id="search" name="search" placeholder="Поиск по сайту" type="search">
+							<span class="input-group-btn">
+									<button class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button>
+								</span>
+						</div>
+					</form>
 				</div>
 			</div>
 
 			<div class="user-login panel panel-info">
 				<div class="panel-heading">Пользователь</div>
 				<div class="panel-body">
-					PanelContent
+
+					<ul class="user-login__tabs nav nav-tabs" role="tablist">
+						<li class="active" role="presentation">
+							<a aria-controls="user-login-sidebar" data-toggle="tab" href="#user-login-sidebar" role="tab">
+								<span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+							</a>
+						</li>
+						<li role="presentation">
+							<a aria-controls="user-registration-sidebar" data-toggle="tab" href="#user-registration-sidebar" role="tab">
+								<span aria-hidden="true" class="glyphicon glyphicon-user"></span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="user-login__content tab-content">
+						<div class="tab-pane fade in active" id="user-login-sidebar" role="tabpanel">
+							<form action="login">
+								<div class="form-group">
+									<input class="form-control input-lg" name="login" placeholder="Логин" type="text">
+								</div>
+								<div class="form-group">
+									<input class="form-control input-lg" name="password" placeholder="Пароль" type="password">
+								</div>
+								<button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+							</form>
+						</div>
+
+						<div class="tab-pane fade" id="user-registration-sidebar" role="tabpanel">
+							<form action="registrtion">
+								<div class="form-group">
+									<input class="form-control input-lg" id="login" name="login" placeholder="Логин " type="text">
+								</div>
+								<div class="form-group">
+									<input class="form-control input-lg" name="password" placeholder="Пароль" type="password">
+								</div>
+								<div class="form-group">
+									<input class="form-control input-lg" name="email" placeholder="Email" type="email">
+								</div>
+								<button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
+							</form>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
