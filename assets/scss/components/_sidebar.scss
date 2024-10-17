@@ -1,0 +1,21 @@
+@use "../presets/skin" as *;
+@use "../presets/variables" as *;
+@use "../mixins/extends" as *;
+@use "../mixins/mixins-media" as *;
+
+.left-sidebar {
+	margin-bottom: $gap-xl;
+
+	.panel:last-of-type {
+		margin: 0;
+	}
+}
+
+.vertical-slider {
+	border-radius: 4px;
+	overflow: hidden;
+
+	&__image {
+		width: 100%;
+	}
+}

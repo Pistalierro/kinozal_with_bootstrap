@@ -13,6 +13,8 @@ html {
 }
 
 body {
+	overflow-x: hidden;
+	max-width: 100%;
 	font-family: $font-main;
 	font-size: $font-size;
 }
