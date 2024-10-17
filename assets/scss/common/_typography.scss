@@ -1,7 +1,20 @@
+@use "../presets/skin" as *;
+@use "../presets/variables" as *;
+
 :before,
 :after,
 * {
 	box-sizing: border-box;
+}
+
+html {
+	font-family: $font-main;
+	font-size: $font-size;
+}
+
+body {
+	font-family: $font-main;
+	font-size: $font-size;
 }
 
 a {

@@ -3,15 +3,16 @@ $color-primary-light: #517ba2;
 $color-primary-dark: #053159;
 
 $color-accent: #df8a13;
-$color-accent-light: lighten($color-accent, 15%);
+$color-accent-light: #F0AD4E;
 
 $color-dark: #232323;
-$color-deep-dark: darken($color-dark, 4%);
+$color-deep-dark: #191919;
+;
 
 $color-gray: #d5d5d5;
-$color-gray-light: lighten($color-gray, 12%);
-$color-gray-dark: darken($color-gray, 40%);
+$color-gray-light: #F4F4F4;
+$color-gray-dark: #6F6F6F;
 
-$color-white: #ffffff;
+$color-light: #ffffff;
 
 $color-black: #000000;

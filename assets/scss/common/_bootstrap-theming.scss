@@ -1,0 +1,69 @@
+@use "../presets/skin" as *;
+@use "../presets/variables" as *;
+@use "../mixins/mixins-media" as *;
+
+.navbar {
+	&-inverse {
+		margin-bottom: 0;
+		border-color: transparent;
+		background-color: $color-deep-dark;
+
+		.navbar-nav {
+			> .active > a {
+				background-color: $color-primary-dark;
+
+				&:hover,
+				&:focus {
+					background-color: $color-primary-light;
+				}
+			}
+
+			> li > a {
+				@include sm-min {
+					border-radius: 4px;
+				}
+				@include sm {
+					text-align: center;
+				}
+
+				&:hover,
+				&:focus {
+					background-color: $color-primary;
+				}
+			}
+		}
+	}
+
+	&-left {
+		@include sm {
+			margin-bottom: 0;
+		}
+
+		li {
+			@include sm-min {
+				margin: 5px 5px 5px 0;
+			}
+		}
+	}
+
+	&-right {
+		@include sm {
+			margin-top: 0;
+		}
+
+		li {
+			@include sm-min {
+				margin: 5px 0 5px 5px;
+			}
+		}
+	}
+
+	&-header {
+		text-align: center;
+	}
+
+	&-toggle {
+		float: none;
+		margin-right: 0;
+	}
+}
