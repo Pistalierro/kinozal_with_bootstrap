@@ -90,7 +90,9 @@
 	}
 }
 
-.input-group-lg > .form-control,
-.input-lg {
-	font-size: 0.875rem;
+.input {
+	&-lg,
+	&-group-lg > .form-control, {
+		font-size: 0.875rem;
+	}
 }

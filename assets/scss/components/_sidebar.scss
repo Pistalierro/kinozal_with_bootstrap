@@ -2,6 +2,7 @@
 @use "../presets/variables" as *;
 @use "../mixins/extends" as *;
 @use "../mixins/mixins-media" as *;
+@use "../mixins/mixins" as *;
 
 .left-sidebar {
 	margin-bottom: $gap-xl;
@@ -39,5 +40,109 @@
 		.active a {
 			color: $color-light !important;
 		}
+	}
+}
+
+.site-news-item {
+
+	$image-size: 75px;
+	$image-size-with-padding: $image-size + 10;
+
+	clear: both;
+	position: relative;
+
+	&:not(:last-child) {
+		min-height: $image-size-with-padding;
+		margin-bottom: $gap;
+
+		&::after {
+			position: absolute;
+			bottom: -5px;
+			content: "";
+			height: 1px;
+			width: calc(100% - #{$image-size-with-padding});
+			background-color: $color-gray;
+		}
+	}
+
+	&:hover {
+		a {
+			color: $color-accent;
+		}
+
+		.site-news-item__image {
+			background-color: $color-accent;
+			border-color: $color-accent;
+		}
+	}
+
+	&__image {
+		float: left;
+		width: $image-size;
+		margin: 0 10px 10px 0;
+		transition: all 0.3s;
+	}
+
+	&__title {
+		margin-bottom: calc($gap / 3 * 2);
+
+		a {
+			@include block-shortener(1rem, 1.5, 50px, 2);
+		}
+	}
+
+	&__date {
+		text-align: right;
+		font-size: 0.8rem;
+		color: $color-gray-dark;
+	}
+}
+
+.top-films {
+
+	&__body {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	&__list {
+		margin-bottom: 0;
+	}
+
+	&__item {
+		background-color: transparent;
+		color: $color-primary !important;
+		border-right: none;
+		border-left: none;
+		padding-right: 55px;
+		transition: all 0.3s ease;
+
+		&:first-of-type {
+			border-radius: 0;
+			border-top: none;
+		}
+
+		&:last-of-type {
+			border-radius: 0;
+			border-bottom: none;
+		}
+
+
+		&:hover,
+		&:focus {
+			background-color: $color-accent !important;
+			color: $color-light !important;
+
+			.badge {
+				background-color: $color-dark;
+			}
+		}
+	}
+
+	&__badge {
+		position: absolute;
+		top: 50%;
+		right: $gap;
+		transform: translateY(-50%);
 	}
 }
