@@ -22,6 +22,55 @@ body
     max-width: 100%;
 }
 
+h1
+{
+    font-family: 'PT Serif', serif;
+}
+h1::after
+{
+    position: absolute;
+
+    width: 100%;
+    margin-top: .85em;
+    margin-left: 15px;
+
+    content: '';
+
+    border-bottom: 3px solid #f0ad4e;
+}
+
+h2
+{
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+
+    margin: 60px 0 45px 45px;
+}
+h2::before
+{
+    position: absolute;
+    left: 0;
+
+    width: 30px;
+    margin-top: 7.5px;
+
+    content: '';
+
+    border-bottom: 3px solid #f0ad4e;
+}
+h2::after
+{
+    position: absolute;
+
+    width: 100%;
+    margin-top: .85em;
+    margin-left: 15px;
+
+    content: '';
+
+    border-bottom: 3px solid #f0ad4e;
+}
+
 a
 {
     padding: 0;
@@ -156,6 +205,61 @@ a:focus
 .main
 {
     margin-bottom: 80px;
+}
+.main .site-search
+{
+    margin-bottom: 45px;
+}
+.main .user-login
+{
+    margin-bottom: 60px;
+}
+
+.top-week,
+.new-films
+{
+    position: relative;
+
+    overflow: hidden;
+}
+.top-week-row,
+.new-films-row
+{
+    margin-right: -7.5px;
+    margin-bottom: -15px;
+    margin-left: -7.5px;
+}
+.top-week-item,
+.new-films-item
+{
+    margin-bottom: 15px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+.top-week-item__thumbnail,
+.new-films-item__thumbnail
+{
+    margin-bottom: 0;
+}
+.top-week-item__image,
+.new-films-item__image
+{
+    width: 100%;
+}
+.top-week-item__title,
+.new-films-item__title
+{
+    font-size: 1rem;
+    font-weight: bold;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .left-sidebar
@@ -325,6 +429,12 @@ a:focus
 }
 @media (min-width: 576px)
 {
+    h1
+    {
+        font-size: 3rem;
+
+        margin: -10px 0 1em;
+    }
     .header-logo__title
     {
         font-size: 3.5rem;
@@ -362,6 +472,18 @@ a:focus
 }
 @media (max-width: 575.8px)
 {
+    h1
+    {
+        font-size: 2rem;
+
+        margin: 0 0 1em;
+    }
+    h2
+    {
+        font-size: 1.75rem;
+
+        margin: 45px 0 30px 45px;
+    }
     .header-logo__title
     {
         font-size: 2.5rem;

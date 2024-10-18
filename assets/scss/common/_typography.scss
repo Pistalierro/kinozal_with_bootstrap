@@ -1,5 +1,6 @@
 @use "../presets/skin" as *;
 @use "../presets/variables" as *;
+@use "../mixins/mixins-media" as *;
 
 :before,
 :after,
@@ -17,6 +18,58 @@ body {
 	max-width: 100%;
 	font-family: $font-main;
 	font-size: $font-size;
+}
+
+h1 {
+	font-family: $font-header;
+
+	@include xs-min {
+		margin: -10px 0 1em;
+		font-size: 3rem;
+	}
+
+	@include xs {
+		font-size: 2rem;
+		margin: 0 0 1em;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		border-bottom: 3px solid $color-accent-light;
+		width: 100%;
+		margin-top: 0.85em;
+		margin-left: $gap;
+	}
+}
+
+h2 {
+	font-family: $font-header;
+	margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+	font-size: 2.5rem;
+
+	@include xs {
+		font-size: 1.75rem;
+		margin: ($gap * 3) 0 ($gap * 2) ($gap * 3);
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		border-bottom: 3px solid $color-accent-light;
+		width: 30px;
+		margin-top: $gap-sm;
+		left: 0;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		border-bottom: 3px solid $color-accent-light;
+		width: 100%;
+		margin-top: 0.85em;
+		margin-left: $gap;
+	}
 }
 
 a {

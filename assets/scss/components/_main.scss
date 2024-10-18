@@ -2,7 +2,51 @@
 @use "../presets/variables" as *;
 @use "../mixins/extends" as *;
 @use "../mixins/mixins-media" as *;
+@use "../mixins/mixins" as *;
 
 .main {
 	margin-bottom: $gap-xl;
+
+	.site-search {
+		margin-bottom: $gap * 3;
+	}
+
+	.user-login {
+		margin-bottom: $gap * 4;
+	}
+}
+
+.top-week,
+.new-films {
+	position: relative;
+	overflow: hidden;
+
+	&-row {
+		margin-right: -$gap-sm;
+		margin-left: -$gap-sm;
+		margin-bottom: -$gap;
+	}
+
+	&-item {
+
+		margin-bottom: $gap;
+		padding-left: $gap-sm;
+		padding-right: $gap-sm;
+
+		&__thumbnail {
+			margin-bottom: 0;
+		}
+
+		&__image {
+			width: 100%;
+		}
+
+		&__title {
+			margin: 0;
+			font-size: 1rem;
+			@include text-shortener;
+			text-align: center;
+			font-weight: bold;
+		}
+	}
 }

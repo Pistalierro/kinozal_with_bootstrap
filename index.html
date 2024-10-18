@@ -64,16 +64,352 @@
 <div class="container">
 	<div class="row">
 		<main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4 text-justify">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eligendi, fugit iste iure nemo quae quaerat. Corporis esse fuga minima
-			mollitia nesciunt non officiis recusandae sit totam voluptatem? Alias doloremque eaque eius, esse id incidunt iusto labore, maxime
-			minima necessitatibus nostrum nulla odio officia, quas quibusdam quos saepe sequi suscipit vero voluptatem? Assumenda eligendi fugit
-			labore pariatur quam repellat repudiandae. Aut delectus eum maxime nulla obcaecati perspiciatis, quibusdam quos? Dolore dolores error
-			fugiat perspiciatis provident quibusdam vel. A adipisci consequatur cupiditate dolor eligendi eos error fugiat impedit, in inventore
-			ipsam ipsum necessitatibus pariatur placeat provident reprehenderit sunt tempora temporibus totam.
+
+			<section class="site-search panel panel-info hidden-lg hidden-md">
+				<div class="panel-heading">Поиск</div>
+				<div class="panel-body">
+					<form action="url/search">
+						<div class="input-group input-group-lg">
+							<input class="form-control" name="search" placeholder="Поиск по сайту" type="search">
+							<span class="input-group-btn">
+									<button class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button>
+								</span>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="user-login panel panel-info hidden-lg hidden-md">
+				<div class="panel-heading">Пользователь</div>
+				<div class="panel-body">
+
+					<ul class="user-login__tabs nav nav-tabs" role="tablist">
+						<li class="active" role="presentation">
+							<a aria-controls="user-login-main" data-toggle="tab" href="#user-login-main" role="tab">
+								<span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+							</a>
+						</li>
+						<li role="presentation">
+							<a aria-controls="user-registration-main" data-toggle="tab" href="#user-registration-main" role="tab">
+								<span aria-hidden="true" class="glyphicon glyphicon-user"></span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="user-login__content tab-content">
+						<div class="tab-pane fade in active" id="user-login-main" role="tabpanel">
+							<form action="url/login">
+								<div class="form-group">
+									<input class="form-control input-lg" name="login" placeholder="Логин" type="text">
+								</div>
+								<div class="form-group">
+									<input class="form-control input-lg" name="password" placeholder="Пароль" type="password">
+								</div>
+								<button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+							</form>
+						</div>
+
+						<div class="tab-pane fade" id="user-registration-main" role="tabpanel">
+							<form action="url/registration">
+								<div class="form-group">
+									<input class="form-control input-lg" name="login" placeholder="Логин " type="text">
+								</div>
+								<div class="form-group">
+									<input class="form-control input-lg" name="password" placeholder="Пароль" type="password">
+								</div>
+								<div class="form-group">
+									<input class="form-control input-lg" name="email" placeholder="Email" type="email">
+								</div>
+								<button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="new-films">
+				<h1 class="new-films__title">Новые фильмы</h1>
+				<div class="new-films-row row">
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film1.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Дэдпул и Росомаха</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film2.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Плохие парни до конца</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film3.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Планета обезьян: Новое царство</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film4.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Чужой: Ромул</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film5.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Союз</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film6.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Смерч 2</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film7.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Хитмен: Последнее дело</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film8.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Министерство не джентльменских дел</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film9.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Пчеловод</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film10.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Каскадеры</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film11.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Не говори никому</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="new-films-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="new-films-item__image" src="assets/img/films/film12.jpg">
+							</a>
+							<div class="new-films-item__caption caption">
+								<h3 class="new-films-item__title">Субстанция</h3>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</section>
+
+			<section class="top-week">
+				<h2 class="top-week__title">ТОП за неделю</h2>
+				<div class="top-week-row row">
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film1.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Дэдпул и Росомаха</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film2.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Плохие парни до конца</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film3.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Планета обезьян: Новое царство</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film4.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Чужой: Ромул</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film5.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Союз</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film6.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Смерч 2</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film7.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Хитмен: Последнее дело</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film8.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Министерство не джентльменских дел</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film9.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Пчеловод</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film10.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Каскадеры</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film11.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Не говори никому</h3>
+							</div>
+						</div>
+					</article>
+
+					<article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+						<div class="top-week-item__thumbnail thumbnail">
+							<a href="#">
+								<img alt="film" class="top-week-item__image" src="assets/img/films/film12.jpg">
+							</a>
+							<div class="top-week-item__caption caption">
+								<h3 class="top-week-item__title">Субстанция</h3>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</section>
+
 		</main>
 		<aside class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
 
-			<div class="vertical-slider panel panel-info">
+			<div class="vertical-slider panel panel-info hidden-xs hidden-sm">
 				<div class="carousel slide" data-ride="carousel" id="vertical-carousel">
 
 					<ol class="carousel-indicators">
@@ -105,10 +441,10 @@
 				</div>
 			</div>
 
-			<div class="site-search panel panel-info">
+			<div class="site-search panel panel-info hidden-xs hidden-sm">
 				<div class="panel-heading">Поиск</div>
 				<div class="panel-body">
-					<form action="search">
+					<form action="url/search">
 						<div class="input-group input-group-lg">
 							<input class="form-control" id="search" name="search" placeholder="Поиск по сайту" type="search">
 							<span class="input-group-btn">
@@ -119,7 +455,7 @@
 				</div>
 			</div>
 
-			<div class="user-login panel panel-info">
+			<div class="user-login panel panel-info hidden-xs hidden-sm">
 				<div class="panel-heading">Пользователь</div>
 				<div class="panel-body">
 
@@ -138,7 +474,7 @@
 
 					<div class="user-login__content tab-content">
 						<div class="tab-pane fade in active" id="user-login-sidebar" role="tabpanel">
-							<form action="login">
+							<form action="url/login">
 								<div class="form-group">
 									<input class="form-control input-lg" name="login" placeholder="Логин" type="text">
 								</div>
@@ -150,7 +486,7 @@
 						</div>
 
 						<div class="tab-pane fade" id="user-registration-sidebar" role="tabpanel">
-							<form action="registrtion">
+							<form action="url/registration">
 								<div class="form-group">
 									<input class="form-control input-lg" id="login" name="login" placeholder="Логин " type="text">
 								</div>
@@ -229,14 +565,14 @@
 				<div class="top-films__body panel-body">
 
 					<div class="top-films__list list-group">
-						<a class="top-films__item list-group-item" href="#">Марсианин
-							<span class="top-films__badge badge">9.1</span>
+						<a class="top-films__item list-group-item" href="#">Дэдпул и Росомаха
+							<span class="top-films__badge badge">7.9</span>
 						</a>
-						<a class="top-films__item list-group-item" href="#">Иллюзия обмана 2
-							<span class="top-films__badge badge">9.1</span>
+						<a class="top-films__item list-group-item" href="#">Плохие парни до конца
+							<span class="top-films__badge badge">6.7</span>
 						</a>
-						<a class="top-films__item list-group-item" href="#">Из машины
-							<span class="top-films__badge badge">9.1</span>
+						<a class="top-films__item list-group-item" href="#">Планета обезьян: Новое царство
+							<span class="top-films__badge badge">7.2</span>
 						</a>
 						<a class="top-films__item list-group-item" href="#">Люси
 							<span class="top-films__badge badge">9.1</span>
