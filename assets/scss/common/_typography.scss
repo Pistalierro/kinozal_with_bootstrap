@@ -58,7 +58,7 @@ h2 {
 		position: absolute;
 		border-bottom: 3px solid $color-accent-light;
 		width: 30px;
-		margin-top: $gap-sm;
+		margin-top: calc($gap / 3 * 2);
 		left: 0;
 	}
 
@@ -82,4 +82,10 @@ a {
 		text-decoration: none;
 		color: $color-accent;
 	}
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

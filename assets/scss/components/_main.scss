@@ -33,8 +33,25 @@
 		padding-left: $gap-sm;
 		padding-right: $gap-sm;
 
+		&:hover,
+		&:focus {
+			.thumbnail {
+				background-color: $color-accent;
+			}
+
+			h3 {
+				color: $color-light;
+			}
+		}
+
 		&__thumbnail {
 			margin-bottom: 0;
+			transition: background-color 0.3s;
+
+			//&:hover,
+			//&:focus {
+			//	background-color: $color-accent;
+			//}
 		}
 
 		&__image {
@@ -47,6 +64,52 @@
 			@include text-shortener;
 			text-align: center;
 			font-weight: bold;
+
+			transition: color 0.3s;
+
+			&:hover,
+			&:focus {
+				color: $color-light !important;
+			}
+		}
+	}
+}
+
+.film-news {
+	position: relative;
+	overflow: hidden;
+
+	&-item {
+		.thumbnail {
+			transition: 0.3s;
+		}
+
+		&__button {
+			display: block;
+			float: right;
+			background-color: $color-accent-light;
+			margin-bottom: 30px;
+			border-radius: 4px;
+			color: $color-light;
+			font-size: 0.875rem;
+			transition: 0.3s;
+		}
+
+		&:hover,
+		&:focus {
+			h3 > a {
+				color: $color-accent;
+			}
+
+			.film-news-item__button {
+				background-color: $color-accent;
+				color: $color-light;
+			}
+
+			.thumbnail {
+				background-color: $color-accent;
+				border-color: $color-accent;
+			}
 		}
 	}
 }

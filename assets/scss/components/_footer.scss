@@ -1,0 +1,37 @@
+@use "../presets/skin" as *;
+@use "../presets/variables" as *;
+@use "../mixins/extends" as *;
+@use "../mixins/mixins-media" as *;
+@use "../mixins/mixins" as *;
+
+.footer {
+	background-color: $color-dark;
+	padding-top: $gap * 2;
+	padding-bottom: $gap;
+
+	&-bottom {
+		color: $color-light;
+		margin-top: $gap;
+		margin-bottom: $gap;
+
+		span {
+			width: 100%;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&-first,
+	&-second,
+	&-third,
+	&-fourth {
+		&__title {
+			color: $color-gray;
+		}
+
+
+		&__link {
+			color: $color-gray-dark;
+		}
+	}
+}
